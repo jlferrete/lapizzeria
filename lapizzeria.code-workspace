@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "wp-content\\plugins"
+		},
+		{
+			"path": "wp-content\\themes"
+		},
+		{
+			"path": "wp-content\\uploads"
+		}
+	]
+}
