@@ -102,4 +102,51 @@ img {
     height: auto;
 }
 
-body
+
+/** Header **/
+
+.site-header {
+    padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .logo {
+        grid-column: 2 / 3;
+    }
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 80%;
+    max-width: 30rem;
+}
+
+@media (min-width: 768px) {
+    .informacion-header {
+        grid-column: 3 / 4;
+    }
+}
+
+.direccion {
+    padding: 2rem 0;
+}
+
+.direccion p {
+    margin: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .direccion p {
+        text-align: right;
+        line-height: 1.5;
+    }
+}
