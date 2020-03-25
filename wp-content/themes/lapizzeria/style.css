@@ -13,13 +13,13 @@
 */
 
 :root {
-    --fuentePrincipal: 'Open Sans', sans-serif;
-    --fuenteHeadings: 'Raleway', sans-serif;
+    --fuentePrincipal: "Open Sans", sans-serif;
+    --fuenteHeadings: "Raleway", sans-serif;
     /** Colores **/
     --rojo: #a61206;
     --naranja: #f19f30;
     --verde: #127427;
-    --blanco: #FFFFFF;
+    --blanco: #ffffff;
     --negro: #000000;
     --grisClaro: #c1c1c1;
     --contenedor: 1200px;
@@ -153,6 +153,39 @@ img {
 
 
 /** Menu Escritorio **/
+
+@media (min-width: 768px) {
+    .slicknav_menu {
+        display: none;
+    }
+    .menu-principal {
+        border-top: 1px solid var(--grisClaro);
+        margin-top: 3rem;
+    }
+    .menu-sitio .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-sitio .menu li {
+        flex: 1;
+    }
+    .menu-sitio .menu li:hover {
+        background-color: var(--naranja);
+    }
+    .menu-sitio .menu li.current_page_item a {
+        border-bottom: 0.5rem solid var(--rojo);
+    }
+    .menu-sitio .menu a {
+        font-family: var(--fuenteHeadings);
+        text-transform: uppercase;
+        color: var(--negro);
+        padding: 1rem;
+        display: block;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
 
 
 /** Menu Responsive **/
