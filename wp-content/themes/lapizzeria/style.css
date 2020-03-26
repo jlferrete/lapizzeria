@@ -110,7 +110,7 @@ img {
 }
 
 @media (min-width: 768px) {
-    .site-header {
+    .site-header .contenedor {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -158,10 +158,6 @@ img {
     .slicknav_menu {
         display: none;
     }
-    .menu-principal {
-        border-top: 1px solid var(--grisClaro);
-        margin-top: 3rem;
-    }
     .menu-sitio .menu {
         display: flex;
         justify-content: space-between;
@@ -189,3 +185,30 @@ img {
 
 
 /** Menu Responsive **/
+
+.menu-principal {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .menu-principal {
+        border-top: 1px solid var(--grisClaro);
+        margin-top: 3rem;
+        display: block;
+    }
+}
+
+.slicknav_menu {
+    background-color: var(--verde);
+}
+
+.slicknav_nav a {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slicknav_nav a:hover {
+    background-color: transparent;
+    color: var(--naranja);
+}

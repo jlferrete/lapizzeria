@@ -1,4 +1,6 @@
 jQuery(document).ready($ => {
     // Memu responsive
-    $('#menu ul').slicknav();
+    $("#menu ul").slicknav({
+        appendTo: $(".site-header")
+    });
 });
