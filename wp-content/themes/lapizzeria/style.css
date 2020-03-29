@@ -72,13 +72,6 @@ h4 {
 }
 
 
-/** Utilidades **/
-
-.text-center {
-    text-align: center;
-}
-
-
 /** Globales **/
 
 a {
@@ -100,6 +93,26 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+
+/** Utilidades **/
+
+.text-center {
+    text-align: center;
+}
+
+.seccion {
+    padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .seccion {
+        position: relative;
+        margin-top: -9rem;
+        background-color: var(--blanco);
+        padding: 6rem 6rem 6rem 6rem;
+    }
 }
 
 
@@ -308,4 +321,36 @@ img {
 .site-footer .direccion p {
     text-align: center;
     font-size: 1.2rem;
+}
+
+
+/** Template paginas **/
+
+.hero {
+    height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero::after {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+.hero h1 {
+    color: var(--blanco);
+    z-index: 1;
+    position: relative;
 }
