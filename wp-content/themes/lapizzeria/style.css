@@ -39,7 +39,7 @@ html {
 body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 p {
@@ -113,6 +113,38 @@ img {
         background-color: var(--blanco);
         padding: 6rem 6rem 6rem 6rem;
     }
+}
+
+
+/** Botones **/
+
+.boton {
+    padding: 1rem 3rem;
+    display: block;
+    flex: 1;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--fuenteHeadings);
+    text-transform: uppercase;
+    border-radius: .5rem;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton-primario {
+    background-color: var(--naranja);
+    color: var(--blanco)
+}
+
+.boton-secundario {
+    background-color: var(--rojo);
+    color: var(--blanco);
 }
 
 
@@ -353,4 +385,85 @@ img {
     color: var(--blanco);
     z-index: 1;
     position: relative;
+}
+
+
+/** Blog **/
+
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 4rem;
+    }
+}
+
+.entrada-blog {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--grisClaro);
+}
+
+.entrada.blog:last-of-type {
+    border: none;
+}
+
+.informacion-entrada {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.informacion-entrada .fecha {
+    background-color: var(--naranja);
+    height: 7rem;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion-entrada .fecha time {
+    font-size: 3rem;
+    font-family: var(--fuenteHeadings);
+    font-weight: 700;
+}
+
+.informacion-entrada .fecha time span {
+    font-size: 1.6rem;
+    display: block;
+    text-transform: uppercase;
+}
+
+.informacion-entrada .titulo-entrada {
+    display: flex;
+    align-items: center;
+}
+
+.informacion-entrada h2 {
+    margin: 0;
+}
+
+.entrada-blog p.autor {
+    text-transform: uppercase;
+    font-family: var(--fuenteHeadings);
+    margin-bottom: 2rem;
+}
+
+.autor span {
+    color: var(--naranja);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.entrada-blog p {
+    margin: .5rem 0;
+    line-height: 1.5;
+}
+
+.entrada-blog .boton {
+    margin-top: 2rem;
 }

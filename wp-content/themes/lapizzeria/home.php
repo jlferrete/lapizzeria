@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<div class="seccion contenedor">
+<div class="seccion contenedor con-sidebar">
     <main class="contenido-principal">
         <?php while(have_posts()): the_post(); ?>
             <article class="entrada-blog">
@@ -32,7 +32,7 @@
                     </div>
                 </header>
 
-                <p class="author">
+                <p class="autor">
                     Escrito por:
                     <span>
                         <?php the_author(); ?>
@@ -51,6 +51,8 @@
 
         <?php endwhile; ?>
     </main>
+
+    <?php get_sidebar(); ?>
 
 </div>
 
