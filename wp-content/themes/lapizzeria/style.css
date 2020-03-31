@@ -477,3 +477,56 @@ img {
 .paginacion a:nth-child(2) {
     margin-left: 2rem;
 }
+
+
+/** Sidebar */
+
+.searchform {
+    position: relative;
+}
+
+.searchform label {
+    display: none;
+}
+
+.searchform div {
+    display: flex;
+}
+
+.searchform input[type="text"] {
+    flex: 1;
+    padding: 1rem;
+}
+
+.searchform input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5rem;
+    background-color: var(--rojo);
+    background-image: url(img/buscador.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    text-indent: -9999px;
+    display: block;
+}
+
+.searchform input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.widget h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.widget a {
+    color: var(--negro);
+}
+
+.widget a:hover {
+    color: var(--naranja);
+}
