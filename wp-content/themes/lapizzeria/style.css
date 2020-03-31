@@ -405,7 +405,7 @@ img {
     border-bottom: 1px solid var(--grisClaro);
 }
 
-.entrada.blog:last-of-type {
+.entrada-blog:last-of-type {
     border: none;
 }
 
@@ -466,4 +466,14 @@ img {
 
 .entrada-blog .boton {
     margin-top: 2rem;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.paginacion a:nth-child(2) {
+    margin-left: 2rem;
 }

@@ -45,3 +45,11 @@ function lapizzeria_menus() {
 
 }
 add_action('init', 'lapizzeria_menus');
+
+/** Agregar botones a paginador */
+
+function lapizzeria_botones_paginador() {
+    return 'class="boton boton-secundario"';
+}
+add_filter('next_posts_link_attributes', 'lapizzeria_botones_paginador' );
+add_filter('previous_posts_link_attributes', 'lapizzeria_botones_paginador' );
