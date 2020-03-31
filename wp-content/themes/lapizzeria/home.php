@@ -15,9 +15,40 @@
 <div class="seccion contenedor">
     <main class="contenido-principal">
         <?php while(have_posts()): the_post(); ?>
-        
-            <h1><?php the_title(); ?></h1>
-        
+            <article class="entrada-blog">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail('especialidades'); ?>
+                </a>
+
+                <header class="informacion-entrada">
+                    <div class="fecha">
+                        <time>
+                            <?php echo the_time('d'); ?>
+                            <span> <?php echo the_time('M'); ?> </span>
+                        </time>
+                    </div>
+                    <div class="titulo-entrada">
+                        <h2><?php the_title(); ?></h2>
+                    </div>
+                </header>
+
+                <p class="author">
+                    Escrito por:
+                    <span>
+                        <?php the_author(); ?>
+                    </span>
+                </p>
+
+                <div class="contenido-entrada">
+                    <?php the_excerpt(); ?>
+
+                    <a class="boton boton-primario" href="<?php the_permalink(); ?>">
+                        Leer más
+                    </a>
+                </div>
+
+            </article>
+
         <?php endwhile; ?>
     </main>
 
