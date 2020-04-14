@@ -3,5 +3,8 @@
 <?php 
     while(have_posts()): the_post();
         get_template_part('template-parts/loop', 'contenido');
+
+        //Comentarios
+        comments_template();
     endwhile; ?>
 <?php get_footer(); ?>
