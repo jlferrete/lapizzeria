@@ -1,0 +1,23 @@
+{
+  "name": "lapizzeria-gutenberg",
+  "version": "1.0.0",
+  "description": "Agrega bloques de Gutenberg",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlferrete/lapizzeria.git"
+  },
+  "author": "Jose Luis Ferrete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlferrete/lapizzeria/issues"
+  },
+  "homepage": "https://github.com/jlferrete/lapizzeria#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^12.5.0"
+  }
+}
