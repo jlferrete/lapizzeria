@@ -45,5 +45,20 @@ function lapizzeria_registrar_bloques()
         array(), //dependencias
         filemtime(plugin_dir_path(__FILE__) . 'build/styles.css') //version
     );
+
+    //Arreglo de bloques
+    $blocks = [
+        'lapizzeria/boxes'
+    ];
+
+    //Recorrer bloques y agregar scripts y styles
+
+    foreach ($blocks as $block) {
+        register_block_type($block, array(
+            'editor_script' =>  'lapizzeria-editor-script',
+            'editor_style'  =>  'lapizzeria-editor-styles',
+            'style'         =>  'lapizzeria-frontend-styles'
+        ));
+    }
 }
 add_action('init', 'lapizzeria_registrar_bloques');
