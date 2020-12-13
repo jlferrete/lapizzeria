@@ -12,6 +12,22 @@
 
 if (!defined('ABSPATH')) exit;
 
+/** Categorias personalizadas */
+function lapizzeria_categoria_personalizada($categories, $post)
+{
+    return array_merge(
+        $categories,
+        array(
+            array(
+                'slug'  => 'lapizzeria',
+                'title' => 'La Pizzeria',
+                'icon'  => 'store'
+            )
+        )
+    );
+}
+add_filter('block_categories', 'lapizzeria_categoria_personalizada', 10, 2);
+
 /** Registrar bloques, scripts y CSS */
 
 function lapizzeria_registrar_bloques()
