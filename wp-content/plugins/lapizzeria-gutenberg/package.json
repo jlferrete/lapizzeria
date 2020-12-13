@@ -7,17 +7,11 @@
     "build": "wp-scripts build",
     "start": "wp-scripts start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jlferrete/lapizzeria.git"
-  },
-  "author": "Jose Luis Ferrete",
+  "author": "Juan De la torre",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jlferrete/lapizzeria/issues"
-  },
-  "homepage": "https://github.com/jlferrete/lapizzeria#readme",
   "devDependencies": {
-    "@wordpress/scripts": "^12.5.0"
+    "@svgr/webpack": "^4.3.2",
+    "@wordpress/scripts": "^4.1.0",
+    "url-loader": "^2.1.0"
   }
 }
